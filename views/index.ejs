@@ -8,7 +8,11 @@
   </head>
   <body>
     <div class="container-fluid">
-      <h1>Welcome to the Twitter Stream</h1>
+        <h1>TweetStream</h1>
+        <div class="wrapper">
+          <div class="inside twitter-bird"></div>
+        </div>
+      <h3>Get the latest buzz on your favorite topic as it happens</h3>
       <section class="row">
         <aside class="col-sm-4 text-center">
           <form class="form-inline" name="search">
@@ -38,11 +42,14 @@
           <button id="clear-button"
                     class="btn btn-danger btn-sm"
                     onclick="clearTweets()">Clear</button></h3>
-          <div id="tweet-container"></div>
+
+            <div id="tweet-container"></div>
+
         </main>
       </section>
     </div>
   </body>
+
 
   <script type="text/javascript" src="/javascripts/jquery.min.js" defer></script>
   <script type="text/javascript" src="/javascripts/bootstrap.min.js" defer></script>
@@ -51,3 +58,5 @@
   <script type="text/javascript" src="/javascripts/app.js" defer></script>
 
 </html>
+
+

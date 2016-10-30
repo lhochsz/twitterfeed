@@ -1,30 +1,44 @@
 body {
-  background-color: #00aff0;
-  color: #323332;
+  background-color: #dedfe0;
+  color: #00B8E5;
 }
 
-h1, h2, h3 {
+
+h2, h3 {
   text-align: center;
-  color: #fff;
-  text-shadow: 0 0 2px #323332;
+  color: #00B8E5;
+  text-shadow: 0 0 2px #fff;
   line-height: 1;
   margin-bottom: 20px;
 }
+
+h1 {
+  text-align: center;
+  color: #00B8E5;
+  text-shadow: 0 0 2px #fff;
+  line-height: 1;
+  margin-bottom: 20px;
+  transition: 1s;
+}
+
+h1:hover {
+  transition: 1s;
+  font-size: 45px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+
 
 #slider {
   margin: 10px;
 }
 
-#sliderValue {
-  color: white;
-}
 
-#tweet-container {
-  /*
-  max-height: 300px;
-  overflow: auto;
-  overflow-x: hidden;
-  */
+#sliderValue {
+  color: #00B8E5;
 }
 
 .tweet {
@@ -35,29 +49,86 @@ h1, h2, h3 {
   background-color: #fdfdfd;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
-  border-radius: 3px;
+  border-radius: 5px;
   opacity: 0;
   transition:opacity 0.25s linear;
+}
+
+.tweet-container {
+  background-color: #9a9fa0;
 }
 
 .tweet.fadeIn {
   opacity: 1;
 }
 
+
 .tweet.fadeOut {
   opacity: 0;
 }
+
 
 #slider .slider-selection {
   background: #BABABA;
 }
 
+
 .names, .contents {
   margin-left: 60px;
 }
+
 
 form {
   text-align: center;
   max-width: 320px;
   margin: 0 auto 20px;
+}
+
+
+.form-inline {
+  margin-top: 30px;
+}
+
+
+.col-sm-8.text-center {
+  margin-top: 10px;
+}
+
+.twitter-bird {
+    height: 38px;
+    width: 37.5px;
+    background-image: url("../images/twitterbird.png");
+}
+
+.twitter-bird:hover {
+    -webkit-animation: fly .4s steps(3) infinite;
+       -moz-animation: fly .4s steps(3) infinite;
+        -ms-animation: fly .4s steps(3) infinite;
+         -o-animation: fly .4s steps(3) infinite;
+            animation: fly .4s steps(3) infinite;
+}
+
+@-webkit-keyframes fly {
+   from { background-position:    0px; }
+     to { background-position: -112.5px; }
+}
+
+@-moz-keyframes fly {
+   from { background-position:    0px; }
+     to { background-position: -112.5px; }
+}
+
+@-ms-keyframes fly {
+   from { background-position:    0px; }
+     to { background-position: -112.5px; }
+}
+
+@-o-keyframes fly {
+   from { background-position:    0px; }
+     to { background-position: -112.5px; }
+}
+
+@keyframes fly {
+   from { background-position:    0px; }
+     to { background-position: -112.5px; }
 }
