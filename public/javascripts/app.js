@@ -8,7 +8,7 @@ function toggleStream() {
     socket.emit('stopStream');
     mode = 'stopped';
     $('#toggle-button').text('Start Streaming');
-    $('#displaying').text('Search again!');
+    $('#displaying').html('Search again or hit <b style="color: #EC971F; text-shadow: 0 0 5px #fff;">Start Streaming</b> to continue the stream.');
     $('#clear-button').show();
 
   }
