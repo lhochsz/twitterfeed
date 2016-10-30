@@ -7,15 +7,6 @@ body {
   margin-top: 15px;
 }
 
-
-h2, h3 {
-  text-align: center;
-  color: #00B8E5;
-  text-shadow: 0 0 2px #fff;
-  line-height: 1;
-  margin-bottom: 20px;
-}
-
 h1 {
   text-align: center;
   color: #00B8E5;
@@ -30,8 +21,25 @@ h1:hover {
   font-size: 65px;
 }
 
+h2 {
+  text-align: center;
+  color: #00B8E5;
+  text-shadow: 0 0 2px #fff;
+  line-height: 1;
+  margin-bottom: 20px;
+}
+
+h3 {
+  text-align: center;
+  color: white;
+}
+
 h3.explain {
   color: #9a9fa0;
+}
+
+#displaying {
+  margin-bottom: 15px;
 }
 
 .wrapper {
@@ -39,20 +47,29 @@ h3.explain {
   justify-content: center;
 }
 
+.search {
+  margin-top: 5px;
+}
+
 .background1 {
   background-color: #EEEEEE;
   border-radius: 5px;
-  width: 400px;
-  margin-left: 15px;
-  margin-right: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+aside {
+  margin-bottom: 10px;
 }
 
 .background2 {
-  background-color: #EEEEEE;
+  background-color: #00B8E5;
+  border: 5px solid white;
   border-radius: 5px;
-  width: 800px;
-  padding: 50px;
+  padding: 20px;
   margin-top: -10px;
+  margin-left: 20px;
+  margin-left: 20px;
 }
 
 #slider {
@@ -159,4 +176,16 @@ form {
 @keyframes fly {
    from { background-position:    0px; }
      to { background-position: -112.5px; }
+}
+
+@media only screen and (max-width: 600px)  {
+  .background1 {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .background2 {
+    background-color: #00B8E5;
+    width: 100%;
+    margin: 0 auto;
+  }
 }
