@@ -19,7 +19,7 @@ h2, h3 {
 h1 {
   text-align: center;
   color: #00B8E5;
-  text-shadow: 0 0 2px #fff;
+  text-shadow: 0 0 5px #fff;
   line-height: 1;
   margin-bottom: 20px;
   transition: 1s;
@@ -39,6 +39,21 @@ h3.explain {
   justify-content: center;
 }
 
+.background1 {
+  background-color: #EEEEEE;
+  border-radius: 5px;
+  width: 400px;
+  margin-left: 15px;
+  margin-right: 10px;
+}
+
+.background2 {
+  background-color: #EEEEEE;
+  border-radius: 5px;
+  width: 800px;
+  padding: 50px;
+  margin-top: -10px;
+}
 
 #slider {
   margin: 10px;
@@ -93,7 +108,7 @@ h3.explain {
 
 form {
   text-align: center;
-  max-width: 320px;
+  max-width: 350px;
   margin: 0 auto 20px;
 }
 

@@ -8,7 +8,8 @@ function toggleStream() {
     socket.emit('stopStream');
     mode = 'stopped';
     $('#toggle-button').text('Start Streaming');
-    $('#displaying').text('Search Again!');
+    $('#displaying').text('Search again!');
+    $('#clear-button').show();
 
   }
   else {
@@ -46,7 +47,8 @@ $(function () {
   });
 
   socket.on('tweets', function(tweet) {
-    $('#displaying').text('Displaying Tweets');
+    $('#displaying').html('Displaying Tweets');
+    $('#clear-button').hide();
     let $tweetHtml = $(`
     <div class="row">
       <div class="tweet">
@@ -84,7 +86,6 @@ $(function () {
     socket.emit('updateTerm', search_term);
     mode = 'started';
     $('#toggle-button').text('Stop Streaming').show();
-    $('#clear-button').show();
   });
 
   socket.on('updatedTerm', function(searchTerm) {

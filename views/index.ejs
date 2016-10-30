@@ -16,10 +16,10 @@
       <h3 class="explain">Get the latest buzz on your favorite topic as it happens.</h3>
       </div>
       <section class="row">
-        <aside class="col-sm-4 text-center">
+        <aside class="col-sm-4 text-center background1">
           <form class="form-inline" name="search">
             <div class="form-group">
-              <label for="searchTerm">Term</label>
+              <label for="searchTerm">Search Term</label>
               <input type="text" class="form-control" id="searchTerm">
             </div>
             <button type="submit" class="btn btn-primary">Search</button>
@@ -40,13 +40,14 @@
           <span id="sliderValue"></span>
         </aside>
         <main class="col-sm-8 text-center">
+        <div class="background2">
           <h3 id="displaying">Use the search bar to the left to look up a keyword.</h3>
                     <button id="clear-button"
                     class="btn btn-danger btn-sm"
                     onclick="clearTweets()">Clear</button>
 
             <div id="tweet-container"></div>
-
+          </div>
         </main>
       </section>
     </div>
