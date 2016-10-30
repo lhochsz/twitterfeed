@@ -47,7 +47,7 @@ $(function () {
   });
 
   socket.on('tweets', function(tweet) {
-    $('#displaying').html('Displaying Tweets');
+    $('#displaying').html('Displaying Tweets.  Hit <b style="color: #EC971F; text-shadow: 0 0 5px #fff;">Stop Streaming</b> to pause.');
     $('#clear-button').hide();
     let $tweetHtml = $(`
     <div class="row">
