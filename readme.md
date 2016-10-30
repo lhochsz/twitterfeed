@@ -6,10 +6,14 @@ This is a live streaming app for Twitter.  Users can search by a keyword for the
 
 ### Quickstart
 **In Terminal**
-1. Clone the repository: `git clone https://github.com/lhochsz/twitterfeed`
-2. `cd twitterfeed`
-3. Install Node packages: `npm init`
-4. Start server: `npm start`
+1. Clone the repository
+ `git clone https://github.com/lhochsz/twitterfeed`
+2. Move into the folder
+`cd twitterfeed`
+3. Install Node packages
+ `npm init`
+4. Start server
+ `npm start`
 5. Go to (http://localhost:3000/) in your browser
 6. Start searching for Tweets!
 
