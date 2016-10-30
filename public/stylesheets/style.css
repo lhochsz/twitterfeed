@@ -3,6 +3,10 @@ body {
   color: #00B8E5;
 }
 
+.jumbotron {
+  margin-top: 15px;
+}
+
 
 h2, h3 {
   text-align: center;
@@ -23,7 +27,11 @@ h1 {
 
 h1:hover {
   transition: 1s;
-  font-size: 45px;
+  font-size: 65px;
+}
+
+h3.explain {
+  color: #9a9fa0;
 }
 
 .wrapper {

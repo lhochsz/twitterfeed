@@ -24,7 +24,7 @@ function clearTweets() {
 }
 
 $(function () {
-
+  $('#clear-button').hide();
   $('#toggle-button').hide();
   $tweetContainer = $('#tweet-container');
 
@@ -84,6 +84,7 @@ $(function () {
     socket.emit('updateTerm', search_term);
     mode = 'started';
     $('#toggle-button').text('Stop Streaming').show();
+    $('#clear-button').show();
   });
 
   socket.on('updatedTerm', function(searchTerm) {
