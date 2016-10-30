@@ -10,7 +10,7 @@
     <div class="container-fluid">
         <h1>TweetStream</h1>
         <div class="wrapper">
-          <div class="inside twitter-bird"></div>
+          <div class="twitter-bird"></div>
         </div>
       <h3>Get the latest buzz on your favorite topic as it happens</h3>
       <section class="row">
@@ -38,10 +38,10 @@
           <span id="sliderValue"></span>
         </aside>
         <main class="col-sm-8 text-center">
-          <h3>Displaying Tweets for "<span id="search-term"></span>"
-          <button id="clear-button"
+          <h3 id="displaying">Use the search bar to the left to look up a keyword.</h3>
+                    <button id="clear-button"
                     class="btn btn-danger btn-sm"
-                    onclick="clearTweets()">Clear</button></h3>
+                    onclick="clearTweets()">Clear</button>
 
             <div id="tweet-container"></div>
 

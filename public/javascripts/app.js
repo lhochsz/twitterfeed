@@ -1,11 +1,15 @@
 let socket = io();
 let mode = 'stopped';
 
+
+//Start and stop stream button
 function toggleStream() {
   if (mode === 'started') {
     socket.emit('stopStream');
     mode = 'stopped';
     $('#toggle-button').text('Start Streaming');
+    $('#displaying').text('Search Again!');
+
   }
   else {
     socket.emit('startStream');
@@ -14,6 +18,7 @@ function toggleStream() {
   }
 }
 
+//Clear the list of tweet
 function clearTweets() {
   $tweetContainer.empty();
 }
@@ -41,6 +46,7 @@ $(function () {
   });
 
   socket.on('tweets', function(tweet) {
+    $('#displaying').text('Displaying Tweets');
     let $tweetHtml = $(`
     <div class="row">
       <div class="tweet">

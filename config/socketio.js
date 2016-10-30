@@ -41,7 +41,7 @@ module.exports = function(server) {
         stream.stop();
       }
 
-      console.log('Connecting to twitter streaming api');
+      console.log('Connecting to Twitter Streaming API');
       stream = twitter.stream('statuses/filter', { track: searchTerm, language: 'en' });
 
       stream.on('tweet', function (tweet) {

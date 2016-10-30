@@ -54,7 +54,7 @@ h1:hover {
   transition:opacity 0.25s linear;
 }
 
-.tweet-container {
+#tweet-container {
   background-color: #9a9fa0;
 }
 
