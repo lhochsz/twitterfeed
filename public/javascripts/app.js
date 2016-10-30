@@ -59,6 +59,7 @@ $(function () {
         </div>
         <div class="contents">
           <span class="text">${tweet.text}</span>
+          <span class="id">${tweet.id}</span>
         </div>
       </div>
     </div>`);
