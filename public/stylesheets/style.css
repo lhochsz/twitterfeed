@@ -63,7 +63,7 @@ aside {
 }
 
 .background2 {
-  background-color: #a1ebfc;
+  background-color: rgba(0, 184, 230, 0.42);
   border: 5px solid white;
   border-radius: 5px;
   padding: 20px;
