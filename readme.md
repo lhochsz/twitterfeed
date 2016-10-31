@@ -2,9 +2,11 @@
 View the live app here: https://tweet-stream-ldh.herokuapp.com/
 
 ## About
-TweetStream is a live streaming app for Twitter.  Users search by a keyword or hashtag for the latest tweets that match the search parameter.  It's a great way to see what people all over the world are talking about on a topic that interests the user.
+TweetStream is a live streaming app for Twitter.  Users search by a keyword or hashtag for the latest tweets that match the search parameter.  It's a great way to see what people all over the world are talking about on a topic that interests the user. The user does not need to be logged into Twitter to use the app.
 
-The app makes use of web sockets from Socket.io to constantly push new Tweets into the browser.  It runs on an Express server and accesses the Twitter Streaming API, which returns JSON data.  The user does not need to be logged into Twitter to use the app.
+The app makes use of web sockets from Socket.io to constantly push new Tweets into the browser.  It runs on an Express server and accesses the Twitter Streaming API, which returns JSON data.  This is made easier using the Twit node package.
+
+Styling includes CSS and Twitter Bootstrap based around the bright Twitter blue.
 
 ## Quickstart
 **In Terminal**
@@ -25,6 +27,8 @@ The app makes use of web sockets from Socket.io to constantly push new Tweets in
 * [EJS](http://www.embeddedjs.com/) - JavaScript Templating
 * [Twit](https://github.com/ttezel/twit) - Make calls to the Twitter Streaming API
 * [Socket.io](http://socket.io/) - Event-driven bi-directional communication between Node/Express server and the browser.
+* [Twitter Bootstrap](http://getbootstrap.com/) - CSS Library
+* [Seiyria Bootstrap Slider](https://github.com/seiyria/bootstrap-slider) - Slider for maximum number of Tweets displayed on the page
 * Middleware - BodyParser
 
 ## Planning
