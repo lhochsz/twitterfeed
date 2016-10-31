@@ -53,13 +53,15 @@ $(function () {
     <div class="row">
       <div class="tweet">
         <img src="${tweet.user_profile_image}" class="avatar pull-left"/>
-        <div class="names">
+        <div class="names" style="color: #9a9fa0;">
           <span class="full-name">${tweet.name}</span>
           <span class="username">@${tweet.screen_name}</span>
         </div>
+        <div class="datetimes">
+          <span class="created">${tweet.created_at}</span>
+        </div>
         <div class="contents">
           <span class="text">${tweet.text}</span>
-          <span class="id">${tweet.id}</span>
         </div>
       </div>
     </div>`);

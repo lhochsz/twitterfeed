@@ -49,7 +49,7 @@ module.exports = function(server) {
         data.name = tweet.user.name;
         data.screen_name = tweet.user.screen_name;
         data.text = tweet.text;
-        data.id_str = tweet.id_str;
+        data.created_at = tweet.created_at;
         data.user_profile_image = tweet.user.profile_image_url;
         socket.emit('tweets', data);
       });
