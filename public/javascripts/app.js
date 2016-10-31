@@ -63,7 +63,7 @@ $(function () {
           <span class="username">@${tweet.screen_name}</span>
         </div>
         <div class="datetimes">
-          <span class="created" style="color: #9a9fa0;">Tweeted at: ${tweet.created_at}</span>
+          <span class="created" style="color: #9a9fa0;">Tweeted: ${tweet.created_at}</span>
         </div>
         <div class="contents">
           <span class="text">${tweet.text}</span>
