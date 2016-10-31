@@ -10,12 +10,24 @@ Styling includes CSS and Twitter Bootstrap based around the bright Twitter blue.
 
 ## Quickstart
 **In Terminal**
+* Make sure you have the following prgrams installed on your computer:
+  * Node.js
+  * Git
+  * A text editor like Sublime Text or Atom
 * Clone the repository
  `git clone https://github.com/lhochsz/twitterfeed`
 * Move into the folder
 `cd twitterfeed`
 * Install Node packages
- `npm init`
+ `npm install`
+* Go to the [Twitter API](https://apps.twitter.com/) and create an account to get a set of keys and tokens for access to the API.
+* Create a file in the main app folder called `set-keys.bash`
+* Put the keys and tokens in `set-keys.bash` in the following format:
+  `export TWITTER_CONSUMER_KEY='XXX'`
+  `export TWITTER_CONSUMER_SECRET='XXX'`
+  `export TWITTER_ACCESS_TOKEN='XXX'`
+  `export TWITTER_ACCESS_TOKEN_SECRET='XXX'`
+* Run `. set-keys.bash` in the Command Line
 * Start server
  `npm start`
 * Go to (http://localhost:3000/) in your browser
