@@ -27,8 +27,8 @@ Styling includes CSS and Twitter Bootstrap based around the bright Twitter blue.
   `export TWITTER_CONSUMER_SECRET='XXX'`
   `export TWITTER_ACCESS_TOKEN='XXX'`
   `export TWITTER_ACCESS_TOKEN_SECRET='XXX'`
-* Run `. set-keys.bash` in the Command Line
-* Start server
+* Run `. set-keys.bash` in the Command Line to set the source for the Twitter API keys
+* Start server in the command line
  `npm start`
 * Go to (http://localhost:3000/) in your browser
 * Start searching for Tweets!
