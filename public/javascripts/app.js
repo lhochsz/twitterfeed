@@ -10,6 +10,7 @@ function toggleStream() {
     $('#toggle-button').text('Start Streaming');
     $('#displaying').html('Search again or hit <b style="color: #EC971F; text-shadow: 0 0 5px #fff;">Start Streaming</b> to continue the stream.');
     $('#clear-button').show();
+    $('.twitter-bird2').hide();
 
   }
   else {
@@ -26,6 +27,7 @@ function clearTweets() {
 
 $(function () {
   $('#clear-button').hide();
+  $('.twitter-bird2').hide();
   $('#toggle-button').hide();
   $tweetContainer = $('#tweet-container');
 
@@ -48,6 +50,7 @@ $(function () {
 
   socket.on('tweets', function(tweet) {
     $('#displaying').html('Displaying Tweets.  Hit <b style="color: #EC971F; text-shadow: 0 0 5px #fff;">Stop Streaming</b> to pause.');
+    $('.twitter-bird2').show();
     $('#clear-button').hide();
     let $tweetHtml = $(`
     <div class="row">

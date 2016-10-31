@@ -63,13 +63,13 @@ aside {
 }
 
 .background2 {
-  background-color: #00B8E5;
+  background-color: #a1ebfc;
   border: 5px solid white;
   border-radius: 5px;
   padding: 20px;
   margin-top: -10px;
   margin-left: 20px;
-  margin-left: 20px;
+  border-radius: 5px;
 }
 
 #slider {
@@ -101,6 +101,7 @@ aside {
 #tweet-container {
   background-color: #9a9fa0;
   margin: 10px;
+  border-radius: 5px;
 }
 
 .tweet.fadeIn {
@@ -178,6 +179,41 @@ form {
      to { background-position: -112.5px; }
 }
 
+.twitter-bird2 {
+    height: 38px;
+    width: 37.5px;
+    background-image: url("../images/twitterbird.png");
+    -webkit-animation: fly .4s steps(3) infinite;
+       -moz-animation: fly .4s steps(3) infinite;
+        -ms-animation: fly .4s steps(3) infinite;
+         -o-animation: fly .4s steps(3) infinite;
+            animation: fly .4s steps(3) infinite;
+}
+
+@-webkit-keyframes fly {
+   from { background-position:    0px; }
+     to { background-position: -112.5px; }
+}
+
+@-moz-keyframes fly {
+   from { background-position:    0px; }
+     to { background-position: -112.5px; }
+}
+
+@-ms-keyframes fly {
+   from { background-position:    0px; }
+     to { background-position: -112.5px; }
+}
+
+@-o-keyframes fly {
+   from { background-position:    0px; }
+     to { background-position: -112.5px; }
+}
+
+@keyframes fly {
+   from { background-position:    0px; }
+     to { background-position: -112.5px; }
+}
 @media only screen and (max-width: 600px)  {
   .background1 {
     width: 100%;
