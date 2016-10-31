@@ -179,7 +179,7 @@ form {
      to { background-position: -112.5px; }
 }
 
-.twitter-bird2 {
+#twitter-bird2 {
     height: 38px;
     width: 37.5px;
     background-image: url("../images/twitterbird.png");

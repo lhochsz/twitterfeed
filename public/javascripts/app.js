@@ -10,13 +10,16 @@ function toggleStream() {
     $('#toggle-button').text('Start Streaming');
     $('#displaying').html('Search again or hit <b style="color: #EC971F; text-shadow: 0 0 5px #fff;">Start Streaming</b> to continue the stream.');
     $('#clear-button').show();
-    $('.twitter-bird2').hide();
+    $('#twitter-bird2').hide();
 
   }
   else {
     socket.emit('startStream');
     mode = 'started';
     $('#toggle-button').text('Stop Streaming');
+    $('#twitter-bird2').show();
+    $('#clear-button').hide();
+
   }
 }
 
@@ -27,8 +30,8 @@ function clearTweets() {
 
 $(function () {
   $('#clear-button').hide();
-  $('.twitter-bird2').hide();
   $('#toggle-button').hide();
+  $('#twitter-bird2').hide();
   $tweetContainer = $('#tweet-container');
 
   let $slider = $('#slider').slider({
@@ -50,8 +53,7 @@ $(function () {
 
   socket.on('tweets', function(tweet) {
     $('#displaying').html('Displaying Tweets.  Hit <b style="color: #EC971F; text-shadow: 0 0 5px #fff;">Stop Streaming</b> to pause.');
-    $('.twitter-bird2').show();
-    $('#clear-button').hide();
+
     let $tweetHtml = $(`
     <div class="row">
       <div class="tweet">
@@ -87,6 +89,8 @@ $(function () {
   });
 
   $('form').on('submit', function() {
+    $('#twitter-bird2').show();
+    $('#clear-button').hide();
     event.preventDefault();
     let search_term = $('input').val();
     socket.emit('updateTerm', search_term);
