@@ -16,15 +16,15 @@ Styling includes CSS and Twitter Bootstrap based around the bright Twitter blue.
   * A text editor like Sublime Text or Atom
 * Clone the repository
 ```bash
- `git clone https://github.com/lhochsz/twitterfeed`
+ git clone https://github.com/lhochsz/twitterfeed
  ```
 * Move into the folder
 ```bash
-`cd twitterfeed`
+cd twitterfeed
 ```
 * Install Node packages
 ```bash
- `npm install`
+ npm install
  ```
 * Go to the [Twitter API](https://apps.twitter.com/) and create an account to get a set of keys and tokens for access to the API.
 * Create a file in the main app folder called `set-keys.bash`
@@ -38,7 +38,7 @@ export TWITTER_ACCESS_TOKEN_SECRET='XXX'
 * Run `. set-keys.bash` in the Command Line to set the source for the Twitter API keys
 * Start server in the command line
 ```bash
- `npm start`
+ npm start
  ```
 * Go to (http://localhost:3000/) in your browser
 * Start searching for Tweets!
