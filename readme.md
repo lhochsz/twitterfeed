@@ -23,10 +23,12 @@ Styling includes CSS and Twitter Bootstrap based around the bright Twitter blue.
 * Go to the [Twitter API](https://apps.twitter.com/) and create an account to get a set of keys and tokens for access to the API.
 * Create a file in the main app folder called `set-keys.bash`
 * Put the keys and tokens in `set-keys.bash` in the following format:
-  `export TWITTER_CONSUMER_KEY='XXX'`
-  `export TWITTER_CONSUMER_SECRET='XXX'`
-  `export TWITTER_ACCESS_TOKEN='XXX'`
-  `export TWITTER_ACCESS_TOKEN_SECRET='XXX'`
+```bash
+export TWITTER_CONSUMER_KEY='XXX'
+export TWITTER_CONSUMER_SECRET='XXX'
+export TWITTER_ACCESS_TOKEN='XXX'
+export TWITTER_ACCESS_TOKEN_SECRET='XXX'
+```
 * Run `. set-keys.bash` in the Command Line to set the source for the Twitter API keys
 * Start server in the command line
  `npm start`
@@ -50,3 +52,4 @@ Styling includes CSS and Twitter Bootstrap based around the bright Twitter blue.
 ## Future Developments
 * Adding routes for the ability to keep a list of favorite search terms
 * Showing time in user's timezone instead of UTC timezone
+* Fully tested using Chai and Supertest
